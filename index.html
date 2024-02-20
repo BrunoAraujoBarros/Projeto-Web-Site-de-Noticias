@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/globe-solid.svg">
+    <title>Noticias Cidade</title>
+
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Css/estilo.css" type="text/css" rel="stylesheet">
+
+</head>
+  <body class="bg-info-subtle pagina" >
+    <!--Inicio cabecalho-->
+    <header class="navbar navbar-expand-lg bg-dark-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded " >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><i class="fa-solid fa-globe"> Noticias Cidade</i></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="endereco.php">Endereço/contato</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </header>
+    <!--final cabecalho-->
+
+
+    <!--Inicio da index-->
+      <section class="container-fluid ">
+        <div class="h4 pb-2 mb-4 text-dark border-bottom border-dark text-center container">
+          DESTAQUES DA SEMANA
+        </div>
+
+<!--inicio da lista de pesquisa-->
+<div class="container-fluid pagina">
+  <div class="row">
+    <div class="col-md-3 col-sm-12 bg-secondary-subtle rounded espaço-mais tama bg-dark-subtle shadow-lg p-3 mb-5">
+      <h3><i class="fa-solid fa-indent"> Categorias</i></h3>
+      <ol class="list-group list-group">
+
+        <li class="list-group-item d-flex flex-column">
+          <!--Primeira lista-->
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEsportes" aria-controls="offcanvasEsportes">Esporte</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEsportes" aria-labelledby="offcanvasEsportesLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasEsportesLabel">Noticias - Esportes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-esportes.html">Brasileirão</a></button>
+                <button type="button" class="list-group-item list-group-item-action"><a href="internacional.html">Futebol Internacional</a></button>
+                <button type="button" class="list-group-item list-group-item-action"><a href="feminino.html">Futebol Feminino</a></button>
+                <button type="button" class="list-group-item list-group-item-action"><a href="selecao.html">Seleção Brasileira</a></button>
+                
+
+              </ul>
+            </div>
+          </div>
+
+          </li>
+
+        <li class="list-group-item d-flex flex-column">
+          <!--Segunda lista-->
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntreterimento" aria-controls="offcanvasEntreterimento">Entreterimento</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEntreterimento" aria-labelledby="offcanvasEntreterimentoLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasEntreterimentoLabel">Notícias - Entreterimento</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-entreterimento.html">Fofocas das Celebridades</a></button>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-group-item d-flex flex-column">
+
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSaude" aria-controls="offcanvasSaude">Saúde</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSaude" aria-labelledby="offcanvasSaudeLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasSaudeLabel">Noticias - Saúde</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-saude.html">Últimas Noticias</a></button>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-group-item d-flex flex-column">
+
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMundo" aria-controls="offcanvasMundo">Mundo</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMundo" aria-labelledby="offcanvasMundoLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasMundoLabel">Noticias - Mundo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-mundo.html"> Nosso Mundo</a></button>
+              </ul>
+            </div>
+          </div>
+
+        </li>
+      
+      </ol>
+    </div>
+     
+            
+            <!--inicio das noticias destaques-->
+          <div class="col-sm-9 espaço tamanho">
+            <div class="row">
+              <div class="col-8 col-sm-6">
+                <div class="d-flex position-static">
+                  <a href="noticia1.html">
+                  <img src="img/armas.jpg" class="flex-shrink-0 me-3 zoomable rounded img-custom" alt="...">
+                  </a>
+                  <div>
+
+                    <h5 class="mt-0">Israel anuncia ter encontrado armas e infraestrutura terrorista do Hamas durante operação em maior hospital de Gaza</h5><!--Titulo-->
+                    <p >Forças de Defesa Israelenses informaram... </p><!--Breve Introdução-->
+                    
+                    <section class="container">
+                      <div class="h4 pb-2 mb-4 text-dark container espaço-mais">
+                        <a href="whatsapp://send?text=https://www.seusite.com/sua-pagina.html" target="_blank" class="animated-button zap" ><i class="fa-brands fa-whatsapp "></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.seusite.com/sua-pagina.html" target="_blank" class="animated-button" ><i class="fa-brands fa-facebook"></i></a>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-4 col-sm-6">
+                <div class="d-flex position-static">
+                  <a href="noticia2.html">
+                  <img src="img/porsool.jpeg" class="flex-shrink-0 me-3 zoomable rounded img-custom" alt="...">
+                  </a>
+                  <div>
+
+                    <h5 class="mt-0 ">Gases de efeito estufa atingem novo recorde, e impactos climáticos aumentam, alerta ONU</h5><!--Titulo-->
+                    <p >Agência das Nações Unidas publicou relatório apontando que...</p><!--Breve Introdução-->
+
+                    <section class="container">
+                      <div class="h4 pb-2 mb-4 text-dark container espaço-mais">
+                        <a href="whatsapp://send?text=https://www.seusite.com/sua-pagina.html" target="_blank" class="animated-button zap" ><i class="fa-brands fa-whatsapp "></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.seusite.com/sua-pagina.html" target="_blank" class="animated-button" ><i class="fa-brands fa-facebook"></i></a>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> 
+    </section>
+    <!--Final das noticias destaques-->
+
+
+     <!--inicio das noticias em coluna-->
+     <section class="container border-top">
+      <div class="row">
+        <div class="col-sm-6 col-md-5 col-lg-6 espaço">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-body-secondary img-custom-n">
+              <a href="noticia3.html" class="link-custon">
+                
+
+              <div class="d-flex position-relative">
+                <img src="img/mulher.webp" class="flex-shrink-0 me-3 img-custom-mini img-fluid" alt="...">
+                <div><!--Noticia-->
+
+                  <h5 class="mt-0"> Passagem para esposa de chefe de facção ir a Brasília</h5><!--Titulo-->
+                  <p> Pasta alegou que custeou passagens de participantes de encontro de Prevenção e Combate à Tortura e que nome de Luciane foi indicado pelo comitê estadual do Amazonas para participar do evento.</p>
+
+                </div>
+              </div>
+            </a>
+            </li>
+<br>
+            <li class="list-group-item bg-body-secondary"> 
+             <a href="noticia4.html" class="link-custon">
+              <div class="d-flex position-relative">
+                <img src="img/rbd.webp" class="flex-shrink-0 me-3 img-custom-mini img-fluid" alt="...">
+                <div><!--Noticia-->
+
+                  <h5 class="mt-0"> Após deixar show do RBD em São Paulo, Anahí afirma estar com infecção</h5><!--Titulo-->
+                  <p> Cantora disse ter sentido febre alta e calafrios, além de dores pelo corpo. Mesmo doente, Anahí ficou mais de uma hora no palco com o grupo RBD nesta sexta-feira (17).</p>
+
+                </div>
+              </div>
+            </a>
+          </li>           
+          </ul>
+        </div>
+
+        <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 espaço">
+          <ul class="list-group list-group-flush">
+
+            <li class="list-group-item bg-body-secondary">
+              <a href="noticia5.html" class="link-custon">
+              <div class="d-flex position-relative">
+                <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/11/pameira.jpeg?w=1024&h=576&crop=1" class="flex-shrink-0 me-3 img-custom-mini img-fluid" alt="...">
+                <div><!--Noticia-->
+
+                  <h5 class="mt-0"> Palmeiras anuncia a contratação do volante Aníbal Moreno</h5><!--Titulo-->
+                  <p> O volante de 24 anos deixará o Racing, da Argentina, em dezembro e é o primeiro reforço alviverde para a temporada de 2024. Ele assinou até dezembro de 2028.</p>
+                </div>
+              </div>
+            </a>
+            </li>
+            <br>
+            <li class="list-group-item bg-body-secondary"> 
+             <a href="noticia6.html" class="link-custon">
+              <div class="d-flex position-relative">
+                <img src="img/quartel-derby.webp" class="flex-shrink-0 me-3 img-custom-mini img-fluid" alt="...">
+                <div><!--Noticia-->
+
+                  <h5 class="mt-0"> Concursos da PM e do Corpo de Bombeiros oferecem mais de 3,3 mil vagas com salários de até R$ 10,8 mil;</h5><!--Titulo-->
+                  <p> Portaria que autoriza abertura dos certames foi publicada no Diário Oficial do Estado deste sábado (11). Inscrições começam na segunda (13) e seguem até 13 de dezembro.</p>
+
+                </div>
+              </div>
+            </a>
+          </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Final das noticias em coluna-->
+
+
+    <!--inicio Spotify-->
+    <section class="container border-top espaço">
+      <h3 class="text-center"><i class="fa-solid fa-radio fa-xs"></i>Sua Rádio</h3>
+      <div class="row g-0 text-center">
+        <div class="col-sm-6 col-md-8"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/5j0o3XQ1YciVzm7MtcFmfG?utm_source=generator&theme=0" width="100%" height="452" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        </div>
+        <div class="col-6 col-md-4"><img class="rounded img-custom-m" src="img/top-10.png"></div>
+      </div>
+    </section>
+    <!--final Spotufy--> 
+    
+
+
+    <!--inicio Rodape-->
+  
+    <footer class="bg-secondary-subtle text-light text-center py-3">
+      <div class="container px-4 text-center">
+        <div class="row gx-5">
+          <div class="col">
+           <div class="p-3">
+            <img src="img/globe-solid.svg" alt="" class="img-rodape">
+           </div>
+          </div>
+
+          <div class="col">
+            <div class="p-3">
+              <p class="letra-rodape text-black">
+                Av. Adjar da Silva Casé, 800 <br>
+                Indianópolis Caruaru – Pernambuco – PE<br>
+                CEP 55024-740 | Telefone 0800 771-5001<br>
+                CNPJ 02.738.361/0001-65<br>
+              </p>
+              <div class="h4 pb-2 mb-4 text-dark container">
+                <a href="" class="icon-rodape"><i class="fa-brands fa-facebook fa-2xs "></i></a>
+                <a href="" class="icon-rodape"><i class="fa-brands fa-whatsapp fa-2xs "></i></a>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer>
+    <!--Final do Rodapé-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!--Font Awesome-->   
+    <script src="https://kit.fontawesome.com/d5b2f9fec7.js" crossorigin="anonymous"></script>   
+    <!--Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

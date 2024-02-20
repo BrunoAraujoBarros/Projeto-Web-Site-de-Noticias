@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/globe-solid.svg">
+    <title>Noticias Cidade</title>
+    
+
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Css/estilo.css" type="text/css" rel="stylesheet">
+
+</head>
+  <body class="bg-info-subtle" >
+    <!--Inicio cabecalho-->
+    <header class="navbar navbar-expand-lg bg-dark-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded " >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-globe"> Noticias Cidade</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" style="display: flex;">
+              <a class="nav-link" href="endereco.php">Endereço/Contato</a>
+              
+
+            </li>
+          </ul>
+        </div>
+  </div>
+</header>
+<!-- Final cabeçalho -->
+
+    <section class="container-fluid ">
+
+    <!--Inicio dos Destaques-->
+    <div class="container shadow-lg p-3 mb-5"> 
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images2.minutemediacdn.com/image/upload/c_crop,w_3298,h_1855,x_0,y_86/c_fill,w_720,ar_16:9,f_auto,q_auto,g_auto/images/GettyImages/mmsport/90min_pt-BR_international_web/01hfh57eqtykdheh28wa.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>Técnico Diniz recebe criticas</h6>
+              <p>Seleção de Diniz, efêmera, não viu urgência de ganhar contra a Colômbia </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://static.gazetaesportiva.com/uploads/imagem/2023/11/18/000_34433XA.jpg.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>França vence Estados Unidos</h5>
+              <p>E avança às oitavas de final da Copa do Mundo sub-17 como líder do Grupo E</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://s2-ge.glbimg.com/Iej-hOl0n7BuzRzuJ--wg-4VeaE=/600x0/filters:quality(70)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/6/R/nEsqGQTROFIQvGt7M3UQ/haaland.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Haaland fora da COPA</h5>
+              <p>Haaland sofre lesão, é cortado da Noruega e preocupa o Manchester City</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Final dos Destaques-->
+
+    <!--Inicio da index-->
+        <div class="container-fluid text-center po">
+          <div class="row">
+            <div class="col-sm-3 bg-secondary-subtle rounded espaço-mais tama bg-dark-subtle shadow-lg p-3 mb-5">
+              <h3><i class="fa-solid fa-indent"> Categorias</i></h3>
+              <ol class="list-group list-group">
+
+                <li class="list-group-item d-flex flex-column">
+                  <!--Primeira lista-->
+                  <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEsportes" aria-controls="offcanvasEsportes">Esporte</button>
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEsportes" aria-labelledby="offcanvasEsportesLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasEsportesLabel">Noticias - Esportes</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="list-group">
+
+                        <button type="button" class="list-group-item list-group-item-action"><a href="menu-esportes.html">Brasileirão</a></button>
+                        <button type="button" class="list-group-item list-group-item-action"><a href="internacional.html">Futebol Internacional</a></button>
+                        <button type="button" class="list-group-item list-group-item-action"><a href="feminino.html">Futebol Feminino</a></button>
+                        <button type="button" class="list-group-item list-group-item-action"><a href="selecao.html">Seleção Brasileira</a></button>
+                        
+
+                      </ul>
+                    </div>
+                  </div>
+
+                  </li>
+
+                <li class="list-group-item d-flex flex-column">
+                  <!--Segunda lista-->
+                  <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntreterimento" aria-controls="offcanvasEntreterimento">Entreterimento</button>
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEntreterimento" aria-labelledby="offcanvasEntreterimentoLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasEntreterimentoLabel">Notícias - Entreterimento</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action"><a href="menu-entreterimento.html">Fofocas dos Famosos</a></button>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="list-group-item d-flex flex-column">
+
+                  <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSaude" aria-controls="offcanvasSaude">Saúde</button>
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSaude" aria-labelledby="offcanvasSaudeLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasSaudeLabel">Noticias - Saúde</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action"><a href="menu-saude.html">Últimas Notícias</a></button>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </li>
+                <li class="list-group-item d-flex flex-column">
+
+                  <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMundo" aria-controls="offcanvasMundo">Mundo</button>
+                  <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMundo" aria-labelledby="offcanvasMundoLabel">
+                    <div class="offcanvas-header">
+                      <h5 class="offcanvas-title" id="offcanvasMundoLabel">Noticias - Mundo</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                      <ul class="list-group">
+                        <button type="button" class="list-group-item list-group-item-action"><a href="menu-mundo.html">Nosso Mundo</a></button>
+
+                      </ul>
+                    </div>
+                  </div>
+
+                </li>
+                
+                
+              </ol>
+            </div>
+            <!--Final da index-->
+            
+
+            <!--Inicio das noticias-->
+            <div class="col-sm-9 espaço">
+              <div class="row">
+
+                <div class="col-sm-6 col-md-5 col-lg-6 espaço">
+                  <ul class="list-group list-group-flush">
+        
+                    <li class="list-group-item ">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/S-OKB_YdegflyFfcCfUcMsFsi6A=/0x0:1024x683/1000x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/q/1/QGNE5nRCWV066w5B3vDw/000-343w9xc.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Sánchez desabafa com crise do Chile: "No Monumental sai excremento do chuveiro"</h5>
+                          <p>Com seleção chilena em crise, atacante da Inter de Milão faz críticas ao futebol local</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/zDzZW1OFEuSkigRvQvX8qW_BNY4=/0x0:838x588/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/v/n/nR5cDZQHGnYEvBom37CA/screen-shot-2023-11-18-at-09.31.23.png" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Argentina terá dois treinos fechados antes de viajar para o Brasil</h5>
+                          <p>Os jogadores da Argentina foram liberados até o início da noite deste sábado. A previsão é de treino fechado para a imprensa hoje, às 18h (horário de Brasília) e também no domingo, às 10h30. A viagem para o Brasil está programada para segunda-feira, véspera do clássico no Maracanã.</p>
+                        </div>
+                      </div>
+                    </a></li>
+                   
+                   
+                  </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 espaço">
+                  <ul class="list-group list-group-flush">
+        
+                    <li class="list-group-item">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/6duiPBrfWpSrCIJ3lqOZMR0y9No=/0x0:3500x2333/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/r/v/VrDwe1Tci9DLmgX0BNSg/gettyimages-1536289521.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Real Madrid considera propor renovação a Carlo Ancelotti</h5>
+                          <p>Em meio ao mistério sobre a possível chegada de Carlo Ancelotti à seleção brasileira, a possibilidade de o italiano renovar com o Real Madrid ganhou força na Espanha. O site "Relevo" afirma nesta sexta-feira que a diretoria do clube espanhol "começou a considerar a possibilidade" de estender o vínculo do treinador..</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/7OS1Qx8K_rHZpdkgdgYZmC34K7s=/0x0:1024x656/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/D/s/3zjfpWRUqqVEvu6ZKZXw/000-343z8xa.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Mbappé diz que tem "mais liberdade" na França do que no PSG e evita abordar futuro</h5>
+                          <p>O capitão francês abordou a diferença dos trabalhos de Luis Enrique e Didier Deschamps. Deschamps me dá mais liberdade, Luis Enrique me dá mais instruções. Mas sei me adaptar e, dada a qualidade dos treinadores, é do meu interesse ouvi-los..</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!--Final das noticias-->
+    
+    
+
+   <!--Inicio Rodape-->
+     
+   <footer class="bg-secondary-subtle text-light text-center py-3">
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3">
+          <img src="img/globe-solid.svg" alt="" class="img-rodape">
+         </div>
+        </div>
+
+        <div class="col">
+          <div class="p-3">
+            <p class="letra-rodape text-black">
+              Av. Adjar da Silva Casé, 800 <br>
+              Indianópolis Caruaru – Pernambuco – PE<br>
+              CEP 55024-740 | Telefone 0800 771-5001<br>
+              CNPJ 02.738.361/0001-65<br>
+            </p>
+            <div class="h4 pb-2 mb-4 text-dark container">
+              <a href="" class="icon-rodape"><i class="fa-brands fa-facebook fa-2xs "></i></a>
+              <a href="" class="icon-rodape"><i class="fa-brands fa-whatsapp fa-2xs "></i></a>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+  <!--Final Rodape-->
+
+
+      
+
+
+
+    
+     <!--Font Awesome-->   
+    <script src="https://kit.fontawesome.com/d5b2f9fec7.js" crossorigin="anonymous"></script>   
+    <!--Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/globe-solid.svg">
+    <title>Noticias Cidade</title>
+    
+
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Css/estilo.css" type="text/css" rel="stylesheet">
+
+</head>
+  <body class="bg-info-subtle" >
+   <!--Inicio cabecalho-->
+   <header class="navbar navbar-expand-lg bg-dark-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded " >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><i class="fa-solid fa-globe"> Noticias CIdade</i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item" style="display: flex;">
+            <a class="nav-link" href="endereco.php">Endereço/Contato</a>
+            
+
+          </li>
+        </ul>
+      </div>
+</div>
+</header>
+<!-- Final cabeçalho -->
+
+    <section class="container-fluid ">
+
+    <!--Inicio dos Destaques-->
+    <div class="container shadow-lg p-3 mb-5"> 
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/sao paulo 3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>São Paulo Vence a Copa do Brasil</h6>
+              <p>São Paulo vence flamengo na Copa do Brasil 2023</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/flamengo.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>128 Anos</h5>
+              <p>No dia 15 de Novembro, FLamengo comemora 128 anos de história</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/neymar.webp" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>O peso da ausência: raio-x da performance da Seleção com e sem Neymar desde a estreia</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Final dos Destaques-->
+
+    <!--Inicio da index-->
+    <div class="container-fluid text-center po">
+      <div class="row">
+        <div class="col-sm-3 bg-secondary-subtle rounded espaço-mais tama bg-dark-subtle shadow-lg p-3 mb-5">
+          <h3><i class="fa-solid fa-indent"> Categorias</i></h3>
+          <ol class="list-group list-group">
+
+            <li class="list-group-item d-flex flex-column">
+              <!--Primeira lista-->
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEsportes" aria-controls="offcanvasEsportes">Esporte</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEsportes" aria-labelledby="offcanvasEsportesLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasEsportesLabel">Noticias - Esportes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-esportes.html">Brasileirão</a></button>
+                    <button type="button" class="list-group-item list-group-item-action"><a href="internacional.html">Futebol Internacional</a></button>
+                    <button type="button" class="list-group-item list-group-item-action"><a href="feminino.html">Futebol Feminino</a></button>
+                    <button type="button" class="list-group-item list-group-item-action"><a href="selecao.html">Seleção Brasileira</a></button>
+                    
+
+                  </ul>
+                </div>
+              </div>
+
+              </li>
+
+            <li class="list-group-item d-flex flex-column">
+              <!--Segunda lista-->
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntreterimento" aria-controls="offcanvasEntreterimento">Entreterimento</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEntreterimento" aria-labelledby="offcanvasEntreterimentoLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasEntreterimentoLabel">Notícias - Entreterimento</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-entreterimento.html">Fofocas dos Famosos</a></button>
+
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex flex-column">
+
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSaude" aria-controls="offcanvasSaude">Saúde</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSaude" aria-labelledby="offcanvasSaudeLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasSaudeLabel">Noticias - Saúde</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-saude.html">Últimas Notícias</a></button>
+
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex flex-column">
+
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMundo" aria-controls="offcanvasMundo">Mundo</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMundo" aria-labelledby="offcanvasMundoLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasMundoLabel">Noticias - Mundo</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-mundo.html">Nosso Mundo</a></button>
+
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            
+            
+          </ol>
+        </div>
+        <!--Final da index-->
+            
+
+            <!--Inicio das noticias-->
+            <div class="col-sm-9 espaço">
+              <div class="row">
+
+                <div class="col-sm-6 col-md-5 col-lg-6 espaço">
+                  <ul class="list-group list-group-flush img-custom-n">
+        
+                    <li class="list-group-item ">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="img/jogador1.webp" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Atacante do Atlético-MG, Paulinho exalta Pelé e revela sonho de Copa do Mundo: "Arrepios só de pensar"</h5>
+                          <p>Jogador foi convocado pela primeira para a seleção principal e pode estar em campo contra Colômbia e Argentina; no Galo, camisa 10 é artilheiro do Brasileirão, com 17 gols</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="img/sao-paulo-time-clube-.webp" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Rafinha dá quadros a jogadores do São Paulo: "Sua presença em minha vida é inestimável"</h5>
+                          <p>Lateral-direito presentou a comissão técnica são-paulina pela conquista na Copa do Brasil e escreveu frase de agradecimento pelo ano vitorioso com a camisa do Tricolor</p>
+                        </div>
+                      </div>
+                    </a></li>
+                   
+                   
+                  </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 espaço">
+                  <ul class="list-group list-group-flush img-custom-n">
+        
+                    <li class="list-group-item">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="img/gabigol.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Entenda origem da arte em post de Gabigol em homenagem aos 128 anos do Flamengo</h5>
+                          <p>Nesta quarta-feira, o Flamengo completa 128 anos. Um dos primeiros foi Gabigol que publicou a homenagem logo na manhã. O post, no entanto, virou polêmica na rede social e o jogador foi alvo de críticas.</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/m9ICeEdLPb2gKOUlqlHvyNjb8ZM=/0x0:4382x2922/984x0/smart/filters:strip_icc()/s.glbimg.com/es/ge/f/original/2016/10/16/mco_3971.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Diego Souza marcou gol nos últimos três jogos que fez pelo Sport contra o Vitória</h5>
+                          <p>Primeiro gol do atacante com a camisa do Leão foi em cima do Vitória, em 2014. No total, em seis jogos entre Sport e Vitória, ele marcou quatro vezes, mas só saiu vitorioso em duas oportunidades</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!--Final das noticias-->
+    
+    
+
+   <!--inicio Rodape-->
+   <footer class="bg-secondary-subtle text-light text-center py-3">
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+         <div class="p-3">
+          <img src="img/globe-solid.svg" alt="" class="img-rodape">
+         </div>
+        </div>
+
+    
+        <div class="col">
+          <div class="p-3">
+            <p class="letra-rodape text-black">
+              Av. Adjar da Silva Casé, 800 <br>
+              Indianópolis Caruaru – Pernambuco – PE<br>
+              CEP 55024-740 | Telefone 0800 771-5001<br>
+              CNPJ 02.738.361/0001-65<br>
+            </p>
+            <div class="h4 pb-2 mb-4 text-dark container">
+              <a href="" class="icon-rodape"><i class="fa-brands fa-facebook fa-2xs "></i></a>
+              <a href="" class="icon-rodape"><i class="fa-brands fa-whatsapp fa-2xs "></i></a>
+            </div>
+            <!--final Rodape-->
+          </div>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+      
+
+
+
+    
+     <!--Font Awesome-->   
+    <script src="https://kit.fontawesome.com/d5b2f9fec7.js" crossorigin="anonymous"></script>   
+    <!--Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

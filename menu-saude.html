@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/globe-solid.svg">
+    <title>Noticias Cidade</title>
+    
+
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Css/estilo.css" type="text/css" rel="stylesheet">
+
+</head>
+  <body class="bg-info-subtle" >
+    <!--Inicio cabecalho-->
+    <header class="navbar navbar-expand-lg bg-dark-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded " >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-globe"> Noticias Cidade</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" style="display: flex;">
+              <a class="nav-link" href="endereco.php">Endereço/Contato</a>
+            </li>
+          </ul>
+        </div>
+        
+  </div>
+</header>
+<!-- Final cabeçalho -->
+
+    <section class="container-fluid ">
+
+    <!--Inicio dos Destaques-->
+    <div class="container shadow-lg p-3 mb-5"> 
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/10/mosquito-213805_1280.jpg?w=1220&h=674&crop=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>Três em cada dez brasileiros afirmam que já tiveram dengue</h6>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/07/handsome-guy-stay-modern-kitchen-drinking-glass-water-morning-time.jpg?w=1220&h=674&crop=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hidratação é importante para evitar efeitos do calor</h5>
+              <p>Já beberam água hoje?</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/11/231108201309-03-whole-eye-partial-face-transplant.webp?w=1220&h=674&crop=1" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Primeiro transplante total de olho e parcial de rosto do mundo acontece nos EUA</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Final dos Destaques-->
+
+    <!--Inicio da index-->
+    <div class="container-fluid text-center po">
+      <div class="row">
+        <div class="col-sm-3 bg-secondary-subtle rounded espaço-mais tama bg-dark-subtle shadow-lg p-3 mb-5">
+          <h3><i class="fa-solid fa-indent"> Categorias</i></h3>
+          <ol class="list-group list-group">
+
+            <li class="list-group-item d-flex flex-column">
+              <!--Primeira lista-->
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEsportes" aria-controls="offcanvasEsportes">Esporte</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEsportes" aria-labelledby="offcanvasEsportesLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasEsportesLabel">Noticias - Esportes</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-esportes.html">Brasileirão</a></button>
+                    <button type="button" class="list-group-item list-group-item-action"><a href="internacional.html">Futebol Internacional</a></button>
+                    <button type="button" class="list-group-item list-group-item-action"><a href="feminino.html">Futebol Feminino</a></button>
+                    <button type="button" class="list-group-item list-group-item-action"><a href="selecao.html">Seleção Brasileira</a></button>
+                    
+
+                  </ul>
+                </div>
+              </div>
+
+              </li>
+
+            <li class="list-group-item d-flex flex-column">
+              <!--Segunda lista-->
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntreterimento" aria-controls="offcanvasEntreterimento">Entreterimento</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEntreterimento" aria-labelledby="offcanvasEntreterimentoLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasEntreterimentoLabel">Notícias - Entreterimento</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-entreterimento.html">Fofocas dos Famosos</a></button>
+
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex flex-column">
+
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSaude" aria-controls="offcanvasSaude">Saúde</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSaude" aria-labelledby="offcanvasSaudeLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasSaudeLabel">Noticias - Saúde</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-saude.html">Últimas Notícias</a></button>
+
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            <li class="list-group-item d-flex flex-column">
+
+              <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMundo" aria-controls="offcanvasMundo">Mundo</button>
+              <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMundo" aria-labelledby="offcanvasMundoLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasMundoLabel">Noticias - Mundo</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="list-group">
+                    <button type="button" class="list-group-item list-group-item-action"><a href="menu-mundo.html">Nosso Mundo</a></button>
+
+                  </ul>
+                </div>
+              </div>
+
+            </li>
+            
+            
+          </ol>
+        </div>
+        <!--Final da index-->
+            
+
+            <!--Inicio das noticias-->
+            <div class="col-sm-9 espaço">
+              <div class="row">
+
+                <div class="col-sm-6 col-md-5 col-lg-6 espaço">
+                  <ul class="list-group list-group-flush">
+        
+                    <li class="list-group-item ">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/04/sono-saude-getty.jpg?w=1024" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">OMS torna a solidão prioridade de saúde global com nova comissão de trabalho</h5>
+                          <p>Nos próximos três anos, o comitê buscará formas de enfrentar ameaça urgente à saúde de uma epidemia global de solidão, responsável por causar doenças físicas e mentais</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2023/07/alta-vista-fast-food-na-mesa.jpg?w=1220&h=674&crop=1" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Ultraprocessados estão ligados a doenças crônicas e até câncer, aponta estudo</h5>
+                          <p>Comer grandes quantidades de alimentos ultraprocessados ​​aumenta o risco de ser diagnosticado com multimorbidade ou de ter múltiplas condições crônicas, como diabetes, doenças cardíacas e câncer, segundo um novo estudo. </p>
+                        </div>
+                      </div>
+                    </a></li>
+                   
+                   
+                  </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 espaço">
+                  <ul class="list-group list-group-flush">
+        
+                    <li class="list-group-item">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/rj_rio20200802_0402_0.jpg?w=1024&h=674&crop=1" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Trabalhar sob o sol gera grande risco de câncer de pele</h5>
+                          <p>Trabalhar exposto ao sol pode ser uma das principais causas do câncer de pele em todo o mundo, de acordo com novos dados da Organização Mundial da Saúde e da Organização Internacional do Trabalho.</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2022/06/diabetes_2.jpg?w=1220&h=674&crop=1" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Diabetes afeta quase 10% das pessoas com plano de saúde no Brasil</h5>
+                          <p>O diabetes atualmente afeta 9,6% dos beneficiários inseridos na saúde suplementar — cerca de 4,87 milhões de pessoas.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!--Final das noticias-->
+    
+    
+
+   <!--inicio Rodape-->
+   <footer class="bg-light text-light text-center py-3">
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3">
+              <img src="img/globe-solid.svg" alt="icon-rodape" class="img-rodape">
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3">
+            <p class="letra-rodape text-end text-dark">
+              Av. Adjar da Silva Casé, 800 <br>
+              Indianópolis Caruaru – Pernambuco – PE<br>
+              CEP 55024-740 | Telefone 0800 771-5001<br>
+              CNPJ 02.738.361/0001-65<br>
+            </p>
+            <div class="h4 pb-2 mb-4 text-end">
+              <a href="" class="icon-rodape text-primary d-inline-block"><i class="fa-brands fa-facebook fa-1x"></i></a>
+              <a href="" class="icon-rodape text-success d-inline-block"><i class="fa-brands fa-whatsapp fa-1x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Final do Rodapé-->
+
+
+      
+
+
+
+    
+     <!--Font Awesome-->   
+    <script src="https://kit.fontawesome.com/d5b2f9fec7.js" crossorigin="anonymous"></script>   
+    <!--Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="img/globe-solid.svg">
+    <title>Noticias Cidade</title>
+    
+
+    <!--CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Css/estilo.css" type="text/css" rel="stylesheet">
+
+</head>
+  <body class="bg-info-subtle" >
+    <!--Inicio cabecalho-->
+    <header class="navbar navbar-expand-lg bg-dark-subtle shadow-lg p-3 mb-5 bg-body-tertiary rounded " >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-globe"> Noticias Cidade</i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item" style="display: flex;">
+              <a class="nav-link" href="endereco.php">Endereço/Contato</a>
+              
+
+            </li>
+          </ul>
+        </div>
+  </div>
+</header>
+<!-- Final cabeçalho -->
+
+    <section class="container-fluid ">
+
+    <!--Inicio dos Destaques-->
+    <div class="container shadow-lg p-3 mb-5"> 
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://s2-ge.glbimg.com/vc2ksXXKfO7vz2DBFxW1Lppo_cs=/0x0:2048x1382/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/W/Y/h2fAFwSeyBg22IuKXABw/53332733021-1b4636fcfd-k.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h6>Gabriel Jesus treina com bola e deve reforçar a Seleção contra a Argentina</h6>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://s2-ge.glbimg.com/uTo3HRjUNTrSn6FUsIRS1evOXgI=/0x0:1815x1211/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/N/Y/lkeKtRS8GS4xTBTK1YkQ/7649ced51104b7e96c7518df6553b3279d19bdc9.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Na Colômbia, o retrato de uma seleção que poderá viver duas transições num só ciclo</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://s2-ge.glbimg.com/-cSfy8Th1OtbyudZHM_kDSpejV4=/0x0:4928x3280/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/G/L/tjTtT9SMuLtSAFxxz8SA/a1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Brasil x Argentina: ingressos esgotados para o clássico no Maracanã</h5>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+    <!--Final dos Destaques-->
+
+<!--Inicio da index-->
+<div class="container-fluid text-center po">
+  <div class="row">
+    <div class="col-sm-3 bg-secondary-subtle rounded espaço-mais tama bg-dark-subtle shadow-lg p-3 mb-5">
+      <h3><i class="fa-solid fa-indent"> Categorias</i></h3>
+      <ol class="list-group list-group">
+
+        <li class="list-group-item d-flex flex-column">
+          <!--Primeira lista-->
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEsportes" aria-controls="offcanvasEsportes">Esporte</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEsportes" aria-labelledby="offcanvasEsportesLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasEsportesLabel">Noticias - Esportes</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-esportes.html">Brasileirão</a></button>
+                <button type="button" class="list-group-item list-group-item-action"><a href="internacional.html">Futebol Internacional</a></button>
+                <button type="button" class="list-group-item list-group-item-action"><a href="feminino.html">Futebol Feminino</a></button>
+                <button type="button" class="list-group-item list-group-item-action"><a href="selecao.html">Seleção Brasileira</a></button>
+                
+
+              </ul>
+            </div>
+          </div>
+
+          </li>
+
+        <li class="list-group-item d-flex flex-column">
+          <!--Segunda lista-->
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEntreterimento" aria-controls="offcanvasEntreterimento">Entreterimento</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEntreterimento" aria-labelledby="offcanvasEntreterimentoLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasEntreterimentoLabel">Notícias - Entreterimento</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-entreterimento.html">Fofocas dos Famosos</a></button>
+
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-group-item d-flex flex-column">
+
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasSaude" aria-controls="offcanvasSaude">Saúde</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasSaude" aria-labelledby="offcanvasSaudeLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasSaudeLabel">Noticias - Saúde</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-saude.html">Últimas Notícias</a></button>
+
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        <li class="list-group-item d-flex flex-column">
+
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMundo" aria-controls="offcanvasMundo">Mundo</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasMundo" aria-labelledby="offcanvasMundoLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasMundoLabel">Noticias - Mundo</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-mundo.html">Nosso Mundo</a></button>
+
+              </ul>
+            </div>
+          </div>
+
+        </li>
+        
+        <li class="list-group-item d-flex flex-column">
+
+          <button class="btn btn-primary bg-black border-black" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasEconomia" aria-controls="offcanvasEconomia">Economia</button>
+          <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasEconomia" aria-labelledby="offcanvasEconomiaLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasEconomiaLabel">Noticias - Economia</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="list-group">
+                <button type="button" class="list-group-item list-group-item-action"><a href="menu-economia.html">Economia Financeiras</a></button>
+
+              </ul>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <!--Final da index-->
+            
+
+            <!--Inicio das noticias-->
+            <div class="col-sm-9 espaço">
+              <div class="row">
+
+                <div class="col-sm-6 col-md-5 col-lg-6 espaço">
+                  <ul class="list-group list-group-flush">
+        
+                    <li class="list-group-item ">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/GGagjIFOKbatwT96Vz1pgFweDtU=/0x0:1169x658/810x456/smart/filters:max_age(3600)/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/Q/M/MHSxuaQ4iITozFs8mV0w/2023-11-17t012846z-215083808-up1ejbh043wt5-rtrmadp-3-soccer-worldcup-col-bra-report.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Análise: Colômbia esbanja contundência que falta a um Brasil que mereceu a derrota</h5>
+                          <p>Com 22 finalizações, 18 dentro da área, colombianos encaixam marcação após bom início da Seleção e encerram jejum em noite mágica de Luis Díaz em Barranquilla</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/bOnDhXzRIT1O0NAbTeH4XmXmFPc=/0x0:1600x1066/640x360/smart/https://i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/s/D/5A9fHuQBafzOAcsrmBQQ/53337532516-a8f6db19d4-h.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Brasil supera Inglaterra e avança às oitavas no Mundial Sub-17</h5>
+                          <p>O Brasil conseguiu sua segunda vitória no Mundial Sub-17, sediado na Indonésia, e obteve a classificação para as oitavas de final.</p>
+                        </div>
+                      </div>
+                    </a></li>
+                   
+                   
+                  </ul>
+                </div>
+
+                <div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0 espaço">
+                  <ul class="list-group list-group-flush">
+        
+                    <li class="list-group-item">
+                      <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/Dj5RYRERBQArcbQWZwN_5-5L9VA=/0x0:4376x2916/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/C/F/5DMNTiSAukrBXTH4scxA/gettyimages-1797661850.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">Íbis brinca após derrota da Seleção para a Colômbia: "Temos mais vitórias em 2023"</h5>
+                          <p>A fase da seleção brasileira não é das melhores. Com a derrota de virada para a Colômbia, a equipe do técnico Fernando Diniz caiu para a quinta colocação das Eliminatórias da Copa.</p>
+                        </div>
+                      </div>
+                    </a>
+                    </li>
+        
+                    <li class="list-group-item"> 
+                     <a href="" class="link-custon">
+                      <div class="d-flex position-relative">
+                        <img src="https://s2-ge.glbimg.com/BfIRqsNfpwA0Rh6JAbwBV6IFZ78=/0x0:1999x1333/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/C/Y/GouHvLS3S5jT4L5AQA2w/53331851927-d2cd5e4e17-k.jpg" class="flex-shrink-0 me-3 img-custom-mini" alt="...">
+                        <div>
+                          <h5 class="mt-0">CBF divulga numeração da Seleção; camisa 9 fica com João Pedro</h5>
+                          <p>A CBF divulgou nesta quinta-feira a numeração das camisas dos jogadores da Seleção para compromissos contra Colômbia e Argentina, pelas eliminatórias sul-americanas. Sem Neymar, a 10 fica com Rodrygo, que já usou o número em amistosos no primeiro semestre.</p>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+   <!--Final das noticias-->
+    
+    
+
+   <!--inicio Rodape-->
+   <footer class="bg-light text-light text-center py-3">
+    <div class="container px-4 text-center">
+      <div class="row gx-5">
+        <div class="col">
+          <div class="p-3">
+              <img src="img/globe-solid.svg" alt="icon-rodape" class="img-rodape">
+          </div>
+        </div>
+        <div class="col">
+          <div class="p-3">
+            <p class="letra-rodape text-end text-dark">
+              Av. Adjar da Silva Casé, 800 <br>
+              Indianópolis Caruaru – Pernambuco – PE<br>
+              CEP 55024-740 | Telefone 0800 771-5001<br>
+              CNPJ 02.738.361/0001-65<br>
+            </p>
+            <div class="h4 pb-2 mb-4 text-end">
+              <a href="" class="icon-rodape text-primary d-inline-block"><i class="fa-brands fa-facebook fa-1x"></i></a>
+              <a href="" class="icon-rodape text-success d-inline-block"><i class="fa-brands fa-whatsapp fa-1x"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--Final do Rodapé-->
+
+
+      
+
+
+
+    
+     <!--Font Awesome-->   
+    <script src="https://kit.fontawesome.com/d5b2f9fec7.js" crossorigin="anonymous"></script>   
+    <!--Java-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+#home{
+    background: rgb(31, 45, 92);
+}
+.espaço{
+    padding: 20px;
+}
+.zoomable {
+    transition: transform 0.3s;
+}
+
+.zoomable:hover {
+    transform: scale(1.2);
+}
+.espaço-mais{
+    padding: 10px
+}
+.tama{
+    height: 15%;
+    width: 15%;
+}
+.img-custom {
+    width: 375px;
+    height: 260px;
+}
+.img-custom-mini{
+    height: 150px;
+    width: 150px;
+    
+}
+.link-custon{
+    text-decoration: none;
+    color: black;
+
+}
+.zap{
+    color: #25D366;
+}
+.animated-button:hover i {
+    transform: translateY(5px);
+}
+.img-rodape{
+    height: 40%;
+    width: 40%;
+}
+.icon-rodape{
+    color: black;
+}
+.img-custom-m {
+    width: 100%;
+    height: 452px;
+    padding: 10px;
+}
+.tamanho{
+    min-width: 300px;
+    min-height: 300px;
+}
+.pagina{
+    min-width: 50%;
+    min-height: 50%;
+}
+.img-custom-n{
+    height: 90%;
+    width: 100%;
+}
